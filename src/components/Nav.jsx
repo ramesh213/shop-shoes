@@ -5,14 +5,14 @@ import { navLinks } from '../constants'
 
 const Nav = () => {
   return (
-   <header className='padding-x py-6 z-20 w-full top-0 sticky '>
+   <header className='padding-x py-4 z-20 w-full top-0 sticky bg-indigo-300'>
     <nav className='flex justify-between items-center max-container'>
         <a href="/"> <img src={headerLogo} alt="logo" width={130} height={29} /></a>
         <ul className="flex-1 flex items-center justify-center gap-16 max-lg:hidden">
             {
                 navLinks.map((link) => (
                     <li key={link.label}>
-                        <a href={link.href} className='font-montserrat leading-normal text-lg text-gray-500'>{link.label}</a>
+                        <a href={link.href} className='font-montserrat leading-normal text-lg text-red-500'>{link.label}</a>
                     </li>
                 ))
             }

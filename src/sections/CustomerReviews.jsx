@@ -9,7 +9,7 @@ const CustomerReviews = () => {
         What Our <span className='text-coral-red'>Customers</span> Say?
       </h3>
       <p className='text-center m-auto mt-4 max-w-lg font-montserrat text-lg text-gray-500'>Hear genuine stories form our satisfied customers about their expceptional experiences with us.</p>
-      <div className="flex clex-1 justify-evenly items-center max-lg:col gap-14">
+      <div className="flex clex-1 justify-evenly items-center max-lg:col max-sm:flex-col gap-14">
         {
           reviews.map((review) => (
             <ReviewCard

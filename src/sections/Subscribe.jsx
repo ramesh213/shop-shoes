@@ -13,7 +13,7 @@ const Subscribe = () => {
         Newsletter
       </h3>
      
-      <div className="lg:w-3/4 w-full flex items-center gap-2 sm:border sm:border-slate-gray rounded-full">
+      <div className="lg:w-3/4 w-full flex max-sm:flex-col items-center gap-2 sm:border sm:border-slate-gray rounded-full">
         <input
           type="text"
           placeholder="subscribe@myshoe.com"

@@ -25,12 +25,12 @@ const Footer = () => {
         <div className="flex flex-1 justify-between gap-20 flex-wrap lg:gap-10">
           {
             footerLinks.map((link) => (
-              <div key={link.name}>
+              <div key={link.title}>
                   <h4 className='text-white font-montserrat text-2xl leading-normal font-medium mb-6'>{link.title}</h4>
                   <ul>
                     {
                       link.links.map((itemlink) => (
-                        <li className='mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-yellow-400'> <a href="">{itemlink.name }</a></li>
+                        <li key={itemlink.link} className='mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-yellow-400'> <a href="">{itemlink.name }</a></li>
                       ))
                     }
                   </ul>
