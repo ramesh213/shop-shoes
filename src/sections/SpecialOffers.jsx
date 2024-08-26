@@ -22,7 +22,7 @@ const SpecialOffers = () => {
         </p>
         <div className="m-11 flex flex-wrap gap-4">
           <Button label="Shop Now" iconUrl={arrowRight} />
-          <Button label="Learn More.." backgroundColor="bg-white"
+          <Button label="Learn More.."  backgroundColor="bg-white"
           borderColor="border-blue-500"/>
         </div>
       </div>
