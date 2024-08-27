@@ -8,6 +8,7 @@ import ShoeCard from '../components/ShoeCard';
 
 const Hero = () => {
 
+  // State for right side  image 
   const [bigShoeImg, SetBigShoeImg] = useState(bigShoe1);
 
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
         <img src={bigShoeImg} alt="big shoe" width={610} height={500} className='object-contain relative z-10 max-w-full' />
         <div className='flex sm:gap-6 gap-4 absolute bottom-[-5%] sm:left-[10%] max-sm:px-6'>
         {
-             shoes.map((shoe, thumbnail) => (
+             shoes.map((shoe) => (
                <div key={shoe.thumbnail}>
                  <ShoeCard 
                  imgURL={shoe}

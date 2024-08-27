@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  { Hero, PopularProducts, SuperQuality, Services, SpecialOffers, CustomerReviews, Subscribe, Footer } from './sections'
 import Nav from './components/Nav'
+import Register from './components/Register';
+
 
 
 function App() {
 
+  const [popUp, setPopUp] = useState(false);
+
+  const handlePopUp = () => {
+    setPopUp(true);
+  };
+
   return (
     <main className='relative'>
-      <Nav/>
+      <Nav handlePopUp = {handlePopUp}/>
+      <section >
+        <Register  popUp = {popUp} setPopUp = {setPopUp}/>
+
+      </section>
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero/>
       </section>
@@ -29,7 +41,7 @@ function App() {
       <section className='padding-x sm:py-32 py-16 w-full'>
         <Subscribe/>
       </section>
-      <section className='bg-black padding-x padding-t pb-8'>
+      <section className='bg-slate-700 padding-x padding-t pb-8'>
         <Footer/>
       </section>
     </main>
