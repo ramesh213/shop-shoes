@@ -33,14 +33,14 @@ const Register = ({ popUp, setPopUp }) => {
                                     name="fullName"
                                     id="fullName"
                                     placeholder="Full Name"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <input
                                     type="email"
                                     name="email"
                                     id="reg-email"
                                     placeholder="Email"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <input
                                     type="number"
@@ -48,20 +48,20 @@ const Register = ({ popUp, setPopUp }) => {
                                     name="phone"
                                     id="phone"
                                     placeholder="Phone"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <input
                                     type="text"
                                     name="address"
                                     id="address"
                                     placeholder="Your Delivery address"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <button
                                     type="submit"
-                                    className="self-end bg-orange-800 text-lg p-2 text-white rounded-md px-8 hover:scale-105 duration-300"
+                                    className="self-end  bg-coral-red font-montserrat text-lg p-2 text-white rounded-md px-4 hover:scale-105 duration-300"
                                 >
-                                    Submit
+                                    Create Account
                                 </button>
                                
                             </form>
@@ -73,27 +73,27 @@ const Register = ({ popUp, setPopUp }) => {
                                     name="email"
                                     id="sign-email"
                                     placeholder="Email ID"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <input
                                     type="password"
                                     name="password"
                                     id="password"
                                     placeholder="Password"
-                                    className="w-full rounded-sm border border-gray-300 dark:border-gray-500 p-2"
+                                    className="form-input"
                                 />
                                 <button
                                     type="submit"
-                                    className="self-end bg-orange-800 text-lg p-2 text-white rounded-md px-8 hover:scale-105 duration-300"
+                                    className="self-end bg-coral-red font-montserrat text-lg p-2 text-white rounded-md px-8 hover:scale-105 duration-300"
                                 >
                                     Sign In
                                 </button>
                             </form>
                             
                         )}
-                        <p className="text-md max-sm:mt-4">
+                        <p className="text-md mt-6">
                                 <span 
-                                  className='underline cursor-pointer text-slate-700 hover:text-green-800' 
+                                  className='underline cursor-pointer font-montserrat text-slate-700 hover:text-green-800' 
                                   onClick={handleToggle}
                                 >
                                   {register ? "Already have an account? Sign in" : "Don't have an account? Create here"}
