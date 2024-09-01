@@ -13,7 +13,7 @@ const Register = ({ popUp, setPopUp }) => {
     return (
         <>
             {popUp && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+                <div id ="register" className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
                     <div className="bg-white py-10 px-10 shadow-md rounded-md duration-200 w-[90%] sm:w-[500px] mx-auto">
                         <div className="mb-4 flex justify-between">
                             <h1 className='text-white'>hello</h1>
@@ -34,6 +34,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="fullName"
                                     placeholder="Full Name"
                                     className="form-input"
+                                    required
                                 />
                                 <input
                                     type="email"
@@ -41,6 +42,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="reg-email"
                                     placeholder="Email"
                                     className="form-input"
+                                    required
                                 />
                                 <input
                                     type="number"
@@ -49,6 +51,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="phone"
                                     placeholder="Phone"
                                     className="form-input"
+                                    required
                                 />
                                 <input
                                     type="text"
@@ -56,6 +59,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="address"
                                     placeholder="Your Delivery address"
                                     className="form-input"
+                                    required
                                 />
                                 <button
                                     type="submit"
@@ -74,6 +78,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="sign-email"
                                     placeholder="Email ID"
                                     className="form-input"
+                                    required
                                 />
                                 <input
                                     type="password"
@@ -81,6 +86,7 @@ const Register = ({ popUp, setPopUp }) => {
                                     id="password"
                                     placeholder="Password"
                                     className="form-input"
+                                    required
                                 />
                                 <button
                                     type="submit"
